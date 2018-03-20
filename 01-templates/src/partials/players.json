@@ -1,0 +1,22 @@
+{
+  players: [
+    {
+      name: 'stefanelsthereal',
+      'slug': 'stefanelsthereal',
+      'skills': 'photographing and coding',
+      'profile': 'https://avatars2.githubusercontent.com/u/6217067?s=400&u=11199c030062e7a25051bd051128f0fca4296be4&v=4'
+    },
+    {
+      'name': 'happyhippo',
+      'slug': 'happyhippo',
+      'skills': 'dog sitting and coding',
+      'profile': 'https://avatars2.githubusercontent.com/u/1222696?s=400&v=4'
+    },
+    {
+      'name': 'chernylu',
+      'slug': 'chernylu',
+      'skills': 'longboarding and coding',
+      'profile': 'https://avatars2.githubusercontent.com/u/32737738?s=400&v=4'
+    }
+  ]
+}
