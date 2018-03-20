@@ -1,10 +1,11 @@
 import $ from 'jquery'
-const handlebars = require('handlebars')
+import Handlebars from 'hbsfy/runtime'
 import contact from './partials/contact.hbs'
 import index from './partials/index.hbs'
-import players from './partials/players.hbs'
+import playersTpl from './partials/players.hbs'
 import player from './partials/player.hbs'
 import notfound from './partials/404.hbs'
+import playerProfiles from './partials/players.json'
 
 $( document ).ready(() => {
   $('a').click(function(ev) {
@@ -14,14 +15,17 @@ $( document ).ready(() => {
     history.pushState(curPath, curPath, curPath)
   })
 
+  const players = []
+  players.push(playerProfiles)
+
   const routes = [
     {
       route: '/players/:player',
       fn: function(name) {
-        console.info('player: ' + name)
-
-        // TODO: dynamische Übergabe des Playernamens an das Template
-        $('#app').html(player(name))
+        let curPlayer = players[0].players.find(function(el){
+          if(el.name === name) return el
+        })
+        $('#app').html(player({player: curPlayer}))
       }
     },
     {
@@ -33,16 +37,15 @@ $( document ).ready(() => {
     {
       route: '/players',
       fn: function() {
-        $('#app').html(players)
+        $('#app').html(playersTpl({p: players[0].players}))
       }
     },
-    /*{
-      // TODO: kaputt - seite zeigt immer / route an
+    {
       route: '/',
       fn: function() {
-        console.info('ROOT!')
+        $('#app').html(index)
       }
-    },*/
+    },
     {
       route: '*',
       fn: function() {
