@@ -6,6 +6,7 @@ import playersTpl from './partials/players.hbs'
 import player from './partials/player.hbs'
 import notfound from './partials/404.hbs'
 import playerProfiles from './partials/players.json'
+import ageHelper from 'ageHelper'
 
 $( document ).ready(() => {
   $('a').click(function(ev) {
@@ -23,7 +24,7 @@ $( document ).ready(() => {
       route: '/players/:player',
       fn: function(name) {
         let curPlayer = players[0].players.find(function(el){
-          if(el.name === name) return el
+          if(el.slug === name) return el
         })
         $('#app').html(player({player: curPlayer}))
       }
