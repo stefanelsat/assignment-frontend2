@@ -1,0 +1,10 @@
+<section class="contact">
+  <h1>Alle Player werden auf dieser Seite vorgestellt.</h1>
+  <div class="body">
+   {{#each p}}
+    <li>
+      <a href="/players/{{slug}}">{{name}}</a>
+    </li>
+    {{/each}}
+  </div>
+</section>
