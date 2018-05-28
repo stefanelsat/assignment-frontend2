@@ -1,0 +1,12 @@
+<section class="contact">
+  <h1>Alle Driver werden auf dieser Seite vorgestellt.</h1>
+  <div class="body">
+   {{#each d}}
+    <li>
+      <p>
+        <a href="driver/{{driverId}}">{{givenName}} {{familyName}}</a>
+      </p>
+    </li>
+    {{/each}}
+  </div>
+</section>

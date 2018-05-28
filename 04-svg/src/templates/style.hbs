@@ -1,0 +1,35 @@
+<h3>Style</h3>
+
+<h4>Text with Style</h4>
+<div class="row">
+  <div class="col-sm-12">
+    <svg class="svg-style" viewBox="0 0 500 100">
+      <style>
+        .greeting {
+          font-weight: bold;
+          font-size: 200%;
+          fill: brown;
+        }
+      </style>
+      <text x="50" y="50" class="greeting">Hallo</text>
+      <text x="120" y="50">Stefan.</text>
+    </svg>
+  </div>
+</div>
+
+<h4>Patterns</h4>
+<div class="row">
+  <div class="col-sm-12">
+    <svg class="svg-style" viewBox="0 0 500 100">
+      <defs>
+        <pattern id="bg" width="10" height="10">
+          <circle fill="green" cx="0" cy="35" r="0">
+            <animate attributeType="XML" attributeName="r" from="20" to="310" dur="10s" repeatCount="indefinite"></animate>
+          </circle>
+        </pattern>
+      </defs>
+      <rect fill="url(#bg)" stroke="green" x="50" y="10" width="300" height="70" rx="20">
+      </rect>
+    </svg>
+  </div>
+</div>

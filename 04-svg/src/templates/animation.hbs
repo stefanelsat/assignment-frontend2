@@ -1,0 +1,59 @@
+<h3>Animation</h3>
+<div class="row">
+  <div class="col-sm-12">
+    <svg class="svg-animation" viewBox="0 0 900 450">
+      <style>
+        svg {
+          background: #CCC;
+          fill: #FFF;
+        }
+        .info_text {
+          font-size: 12em;
+          font-weight: bold;
+          animation: glow 2s infinite alternate ease-in-out;
+          text-shadow:
+            0 1px 0 #ccc,
+            0 2px 0 #c9c9c9,
+            0 3px 0 #bbb,
+            0 4px 0 #b9b9b9,
+            0 5px 0 #aaa,
+            0 6px 1px rgba(0,0,0,.1),
+            0 0 5px rgba(0,0,0,.1),
+            0 1px 3px rgba(0,0,0,.3),
+            0 3px 5px rgba(0,0,0,.2),
+            0 5px 10px rgba(0,0,0,.25),
+            0 10px 10px rgba(0,0,0,.2),
+            0 20px 20px rgba(0,0,0,.15);
+        }
+        .circle {
+          fill: rgba(149, 236, 9, 0.6);
+          stroke: #fff;
+          stroke-width: 5px;
+          animation: move 4s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+          to {
+            text-shadow:
+              0 0 5px rgba(149, 236, 9, 0.2),
+              0 1px 3px rgba(149, 236, 9, 0.2),
+              0 3px 5px rgba(149, 236, 9, 0.2),
+              0 5px 10px rgba(149, 236, 9, 0.2),
+              0 10px 10px rgba(149, 236, 9, 0.2),
+              0 20px 20px rgba(149, 236, 9, 0.2);
+          }
+        }
+        @keyframes move {
+          50% {
+            transform: translateX(150px);
+
+          }
+
+        }
+      </style>
+      <text x="70" y="250" class="info_text">Boarding</text>
+      <circle cx="350" cy="350" r="50" class="circle">
+      </circle>
+    </svg>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<section class="contact">
+  <h1>Alle Constructors werden auf dieser Seite vorgestellt.</h1>
+  <div class="body">
+   {{#each c}}
+    <li>
+      <p>
+        <a href="constructor/{{constructorId}}">{{name}} ({{nationality}})</a>
+      </p>
+    </li>
+    {{/each}}
+  </div>
+</section>

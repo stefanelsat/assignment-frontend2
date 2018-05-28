@@ -1,0 +1,20 @@
+{
+  players: [
+    {
+      name: 'Magnus Carlsen',
+      'slug': 'mcarlsen',
+      'country': 'Norweng',
+      'birthdate': '1990, 10, 30',
+      'bio': 'Im Jahre 2004 errang Carlsen den Titel eines Großmeisters als damals zweitjüngster Spieler – im Alter von 13 Jahren, 4 Monaten und 27 Tagen. Erstmals im Januar 2010 erreichte er als bislang jüngster Spieler die Spitzenposition der FIDE-Weltrangliste und hat diese durchgehend seit Juli 2011 bis heute inne.[1] Seine Elo-Zahl vom Mai 2014 ist mit 2882 Punkten die höchste in der Geschichte; sie übersteigt den bisherigen Rekord von Garri Kasparow im Juli 1999 mit 2851 Punkten. Im Jahr 2014 verteidigte Carlsen zum einen seinen Weltmeistertitel im klassischen Schach, zudem wurde er Schnellschach- und Blitzschach-Weltmeister. Von 2009 bis 2013 gewann er jedes Jahr den (danach nicht mehr vergebenen) Schach-Oscar.',
+      'profile': 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/15-10-10-Magnus_Carlsen-RalfR-N3S_2364.jpg/800px-15-10-10-Magnus_Carlsen-RalfR-N3S_2364.jpg'
+    },
+    {
+      'name': 'Sergey Karjakin',
+      'slug': 'skarjakin',
+      'country': 'Russlond',
+      'birthdate': '1990, 11, 01',
+      'bio': 'Mit fünf Jahren erlernte Karjakin das Schachspiel, als Elfjähriger wurde er Internationaler Meister. Er errang seinen Großmeistertitel am 12. August 2002 im Alter von zwölf Jahren, sieben Monaten und null Tagen und hält damit den Rekord als jüngster Schach-Großmeister aller Zeiten. ',
+      'profile': 'https://upload.wikimedia.org/wikipedia/commons/2/22/Sergey_Karjakin_%282017-07-06%29_02.jpg'
+    }
+  ]
+}

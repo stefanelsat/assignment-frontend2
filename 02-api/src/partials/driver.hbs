@@ -1,0 +1,28 @@
+<section class="player">
+  <h1>{{d.givenName}} {{d.familyName}}</h1>
+
+  <div class="constructors">
+    <h2>Constructors</h2>
+    {{#each c}}
+    <li>
+      <p>
+        <a href="../constructor/{{constructorId}}">{{name}}</a>
+      </p>
+    </li>
+    {{/each}}
+  </div>
+
+  <div class="constructors">
+    <h2>Results</h2>
+    {{#each r}}
+    <li>
+      <p>
+        <span>In the {{raceName}}, season {{season}}</span>
+        {{#with Results}}
+            he reached position {{[0].position}}.
+        {{/with}}
+      </p>
+    </li>
+    {{/each}}
+  </div>
+</section>

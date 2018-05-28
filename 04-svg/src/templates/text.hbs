@@ -1,0 +1,54 @@
+<h3>Text</h3>
+
+<h4>Text</h4>
+<div class="row">
+  <div class="col-sm-12">
+    <svg class="svg-style" viewBox="0 0 500 100">
+      <text x="100" y="50">Hallo ich bin ein SVG Text.</text>
+    </svg>
+  </div>
+</div>
+
+<h4>Text w/ Auto-Wrap</h4>
+<div class="row">
+  <div class="col-sm-12">
+    <svg class="svg-style" viewBox="0 0 500 100">
+      <switch>
+        <foreignObject x="0" y="20" width="250" height="100">
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing
+            elitr, sed diam nonumy eirmod tempor invidunt ut
+            labore et dolore magna aliquyam erat, sed diam voluptua.
+            At vero eos et accusam et justo duo dolores et ea rebum.
+            Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+            ipsum dolor sit amet. </p>
+        </foreignObject>
+      </switch>
+    </svg>
+  </div>
+</div>
+
+<h4>Fancy Text</h4>
+<div class="row">
+  <div class="col-sm-12">
+    <svg class="svg-text" viewBox="0 0 900 450">
+      <defs>
+        <style type="text/css">
+          @import url('https://fonts.googleapis.com/css?family=Pacifico');
+          .wow {
+            font: 8em 'Pacifico', cursive;
+            stroke: red;
+          }
+        </style>
+        <pattern id="mybg" x="0" y="0" width="10"
+          height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(345)">
+          <animate attributeType="XML" attributeName="y" from="40" to="0" dur="4s" repeatCount="indefinite"></animate>
+          <rect fill="lightblue" x="0" y="0" width="100" height="20">
+          </rect>
+          <rect fill="red" x="0" y="20" width="100" height="20">
+          </rect>
+        </pattern>
+      </defs>
+      <text x="10" y="200" fill="url(#mybg)" class="wow">Let's go Surfing!</text>
+    </svg>
+  </div>
+</div>

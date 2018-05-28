@@ -1,0 +1,32 @@
+{
+  "name": "03-choo",
+  "version": "1.0.0",
+  "description": "Choo choo",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js -p 8080 --open --live -- -t es2020 -t sheetify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanelsat/03-choo.git"
+  },
+  "keywords": [
+    "choo",
+    "framework"
+  ],
+  "author": "Stefan Elsenhuber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefanelsat/03-choo/issues"
+  },
+  "homepage": "https://github.com/stefanelsat/03-choo#readme",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "budo": "^11.2.0",
+    "choo": "^3.3.0",
+    "es2020": "^1.1.9",
+    "jquery": "^3.3.1",
+    "node-emoji": "^1.8.1",
+    "sheetify": "^7.3.2"
+  }
+}
