@@ -24,3 +24,6 @@ grunt
 
 ## Livedemo
 + On surge: [stefanelsat-svg.surge.sh](http://stefanelsat-svg.surge.sh)
+
+
+![Interactive Button](./docs/interaction.gif "Interactive button")

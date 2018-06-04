@@ -9,7 +9,7 @@
     filter: drop-shadow(0 0 0.2em rgba(0,0,0,0.75));
   }
   .sub:active {
-    animation: commit 4s ease-in-out;
+    /*animation: commit 4s ease-in-out;*/
   }
   .bg-rect {
     fill: #428a3e;
@@ -22,11 +22,8 @@
     font-weight: 900;
     cursor: pointer;
   }
-  @keyframes commit {
-    100% {
-      transform: translateX(270px);
-    }
-
+  #commited-text {
+    display: none;
   }
 </style>
 <div class="row">
@@ -34,13 +31,12 @@
     <label>
       <input type="submit" class="hide">
       <svg width="500">
-        <g>
+        <g id='commit-btn' class="sub">
           <rect ry="5" width="350" height="80" class="bg-rect"></rect>
-          <text x="120" y="52">Commit</text>
-        </g>
-        <g class="sub">
-          <rect ry="5" width="80" height="80" class="fg-rect"></rect>
+          <text id="commit-text" x="120" y="52">Commit</text>
+          <rect x="0" ry="5" width="80" height="80" class="fg-rect"></rect>
           <text class="link-text" x="30" y="50">&#62;</text>
+          <text id="commited-text" x="80" y="52">Commited</text>
         </g>
       </svg>
     </label>

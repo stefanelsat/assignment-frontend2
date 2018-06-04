@@ -1,4 +1,5 @@
 import router from './router'
+import Handlebars from 'hbsfy/runtime'
 import homeTpl from './templates/home.hbs'
 import simpleTpl from './templates/simple.hbs'
 import styleTpl from './templates/style.hbs'
@@ -6,6 +7,7 @@ import animationTpl from './templates/animation.hbs'
 import textTpl from './templates/text.hbs'
 import interactionTpl from './templates/interaction.hbs'
 import notFoundTpl from './templates/not-found.hbs'
+import {registerTrackPos, unregisterTrackPos} from './mouseControl'
 const app = document.getElementById('app')
 
 function index() {
@@ -30,6 +32,12 @@ function text() {
 
 function interaction() {
   app.innerHTML = interactionTpl()
+  $('#commit-btn').mousedown((handle) => {
+    registerTrackPos(handle)
+  })
+  $('#commit-btn').mouseup((handle) => {
+    unregisterTrackPos(handle)
+  })
 }
 
 function notFound() {
