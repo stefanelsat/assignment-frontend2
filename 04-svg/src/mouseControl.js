@@ -1,4 +1,5 @@
 function registerTrackPos(handle) {
+  // TODO: add touchmove eventListener for support on mobile devices
   $(handle.currentTarget).mousemove((mouseEvent) => {
     let commitBtn = $('#commit-btn > .fg-rect')
     let commitArrow = $('#commit-btn > .link-text')
@@ -13,6 +14,7 @@ function registerTrackPos(handle) {
 
   })
 }
+// TODO: unbind touchmove evtListener 
 function unregisterTrackPos(handle) {
   $(handle.currentTarget).unbind('mousemove')
 }
